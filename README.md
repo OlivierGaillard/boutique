@@ -26,3 +26,4 @@ des montants séparés par des virgules. On ajoute aussi le champ
 *tailles_vendues* qui contiendra les tailles vendues et la quantité, comme
 par exemple`[('XL', 1), ('M', 2)]`.
 
+# boutique
