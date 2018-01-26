@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>
+        Prestigemikafriq
+    </title>
+
+
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'labels/css/labels.css' %}" />-->
+    <!-- Il faut charger jquery avant bootstrap. -->
+    <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+          <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+          <!--crossorigin="anonymous">-->
+
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />-->
+
+    <!--<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />-->
+
+    <!---->
+    <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+
+    <!-- Added 11.06.17 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--<link rel="stylesheet" href="{% static 'open-iconic-master/font/css/open-iconic-bootstrap.css' %}" />-->
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+</head>
+<body>
+    {% block site_wrapper %}{% endblock %}
+</body>
+</html>

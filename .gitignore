@@ -1,0 +1,9 @@
+db_backups/
+migrations/
+myproject/settings.py
+*.json
+*.pyc
+__pycache__
+*.html~
+*.md
+media/articles/*.jpg
