@@ -1,29 +1,10 @@
-# Ajouter les images
+# Boutique
 
-On peut les ajouter une à une mais comme la date de création des images
-suit la séquence des clés primaires il est possible d'automatiser
-le processus:
+C'est un projet Django pour gérer une micro-boutique:
 
-- copier toutes les images dans le répertoire `/media/articles`.
-- créer une requête chargeant tous les articles, en partant du plus
-  ancien.
-- pour chaque article créer une instance du modèle `Photo` et 
-  renseigner la clé étrangère sur l'ID de l'article, et le chemin sur la
-  *bonne* image.
-  
-Il faut créer une liste des couples `(article_id, image_name)`.
-Une fois cette liste en place on crée les instances de `Photo` avec le 
-chemin et l'ID de l'article.
+- entrées des articles (avec prix d'achat, quantité);
+- saisie des ventes (quantité mise à jour);
+- création d'arrivages;
+- saisie des frais des arrivages;
+- mini-tableau de bord: coûts de revient - ventes
 
-# Analyse des ventes
-
-Une vente peut concerner plusieurs articles. Momentanément nous
-avons besoin d'une solution permettant d'indiquer qu'un article
-a été vendu pour tel montant, et quelle taille.
-
-Il est possible de créer un champ *ventes* qui contiendra la liste
-des montants séparés par des virgules. On ajoute aussi le champ
-*tailles_vendues* qui contiendra les tailles vendues et la quantité, comme
-par exemple`[('XL', 1), ('M', 2)]`.
-
-# boutique
